@@ -32,7 +32,7 @@ app.post('/', (req, res) => {
     }
 
     const jsonData = JSON.stringify(data);
-    const url = 'https://us9.api.mailchimp.com/3.0/lists/91e6fdcc89';
+    const url = 'https://us9.api.mailchimp.com/3.0/lists/listid';
     const options = {
         method: 'POST',
         auth: 'Dara:Authorized_id'
