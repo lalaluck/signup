@@ -35,7 +35,7 @@ app.post('/', (req, res) => {
     const url = 'https://us9.api.mailchimp.com/3.0/lists/91e6fdcc89';
     const options = {
         method: 'POST',
-        auth: 'Dara:64e51ef0e2f6d2c31a2fb3a0b3b0dee8-us9'
+        auth: 'Dara:Authorized_id'
     }
     const request = https.request(url, options, (response) => {
 
@@ -64,5 +64,4 @@ app.listen(port, () => {
     console.log('Server is running on port ' + port + '.');
 })
 
-//listid 91e6fdcc89
 
