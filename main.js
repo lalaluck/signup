@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 //const role = Parse.Object.extend('role');
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static('./public'));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', (req, res) => {
