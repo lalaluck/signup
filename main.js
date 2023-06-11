@@ -32,17 +32,10 @@ app.post('/', (req, res) => {
     }
 
     const jsonData = JSON.stringify(data);
-<<<<<<< HEAD
     const url = process.env.url;
     const options = {
         method: 'POST',
         auth: process.env.auth
-=======
-    const url = 'https://us9.api.mailchimp.com/3.0/lists/listid';
-    const options = {
-        method: 'POST',
-        auth: 'Dara:Authorized_id'
->>>>>>> 4d01e5cf3fa2afc0e3f6d40c7dd71aac0c9a2501
     }
     const request = https.request(url, options, (response) => {
 
@@ -71,8 +64,4 @@ app.listen(port, () => {
     console.log('Server is running on port ' + port + '.');
 })
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 4d01e5cf3fa2afc0e3f6d40c7dd71aac0c9a2501
 
