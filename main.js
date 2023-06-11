@@ -33,9 +33,10 @@ app.post('/', (req, res) => {
 
     const jsonData = JSON.stringify(data);
     const url = process.env.url;
+    const AUTH = process.env.auth;
     const options = {
         method: 'POST',
-        auth: process.env.auth
+        auth: AUTH
     }
     const request = https.request(url, options, (response) => {
 
